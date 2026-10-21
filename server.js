@@ -21,9 +21,6 @@ let equipment = [
 
 app.get("/api/equipment", (req, res) => {
   // TODO: Return the full equipment array.
-  if (!equipment) {
-    return res.status(501).send("Array of equipment not found");
-  }
   res.json(equipment);
 });
 
